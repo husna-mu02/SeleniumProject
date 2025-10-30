@@ -41,9 +41,9 @@ public class TableHandling extends Base{
 	//Checking whether Ashton Cox Name is present in the table or not
 	void checkNamePresentOrNot() {
 		driver.navigate().to("https://selenium.qabible.in/table-pagination.php");
-		List<WebElement> rowprinting=driver.findElements(By.xpath("//table[@id='dtBasicExample']//tbody//tr//td[1]"));
+		List<WebElement> checkprinting=driver.findElements(By.xpath("//table[@id='dtBasicExample']//tbody//tr//td[1]"));
 		String name="Ashton Cox";
-		for (WebElement n : rowprinting) {
+		for (WebElement n : checkprinting) {
             if (n.getText().equalsIgnoreCase(name)) {
                 System.out.println(name + " is present under the Name field of the table.");
             }
@@ -59,6 +59,7 @@ public class TableHandling extends Base{
 		//tablehandling.cellPrinting();
 		//tablehandling.columnPrinting();
 		tablehandling.checkNamePresentOrNot();
+		
 		//tablehandling.browserQuitAndClose();
 	}
 
