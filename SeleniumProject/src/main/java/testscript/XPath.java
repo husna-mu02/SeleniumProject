@@ -71,7 +71,6 @@ public class XPath extends Base {
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		XPath xpath=new XPath();
 		xpath.browserInitialization();
 		xpath.relativeXPath();
